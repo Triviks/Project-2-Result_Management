@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Dashboard{
+    display:grid;
+    grid-template-columns: 20% 70%;
+    height:750px;
+}
+
+.admin-1{
+    background-color: rgb(5, 5, 116);
+    color:white;
+    padding:30px;
+    padding-right: 0px;
+}
+
+.admin12{
+    display:flex;
+    gap:10px;
+    margin-bottom: 30px;
+    padding-right: 5px;
+}
+
+.admin12 h1{
+    font-size: 21px;
+}
+
+.admin11{
+    display:flex;
+    gap:16px;
+    font-size: 24px;
+    padding:3px 20px;
+    margin-bottom: 7px;
+}
+
+.add span{
+    margin-left: 4px;
+    font-size: 25px;
+}
+
+.add a{
+    margin-left: -3px;
+}
+
+.admin11 span{
+   margin-top: 3px;
+}
+
+.admin11 a{
+    font-size: 13px !important; 
+    margin-top: 7px;
+    color:white;
+    text-decoration: none;
+}
+
+.admin14 a{
+    margin-top: 8px !important;
+}
+
+.admin13,.admin11:hover{
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color:black ;
+    font-weight: bold;
+}
+
+.admin13 a,.admin11:hover a{
+    color:black;
+}
+
+.admin-2{
+    padding:40px 50px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns: 85% 25%;
+    gap:50px;
+}
+
+.img{
+    position:relative;
+    border:1px solid rgb(165, 162, 162);
+}
+
+.img img{
+    position: absolute;
+    width:99%;
+    height:99%;
+    top:0.08rem;
+    left:0.09rem;
+}
+
+.academic-details h1{
+    font-size: 20px;
+    color:rgb(5, 5, 146);
+    margin-bottom: 15px;
+}
+
+.academic-details table, tr, td,.info-1 table,tr,td{
+    border:1px solid rgb(180, 175, 175);
+    border-collapse: collapse;
+}
+
+.academic-details table{
+    width:100%;
+}
+
+table td span{
+    font-weight: bold;
+}
+
+table td{
+    font-size: 14px;
+}
+
+.academic-details td,.info-1 td{
+   padding:5px 10px;
+}
+
+.table-row{
+    text-align: center;
+    margin-top: -5px;
+}
+
+.sec-heading{
+    margin-top: 25px;
+}
+
+.info-1 h1{
+    font-size: 20px;
+    color:rgb(5,5,146);
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.info-1 table{
+    width:115%;
+}
+
+.info-1{
+    margin-bottom: 0px;
+}

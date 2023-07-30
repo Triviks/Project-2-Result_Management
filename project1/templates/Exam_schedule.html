@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exam_schedule</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="author" content="Trivikraman">
+        <meta name="description" content="Exam schedule">
+        <meta name="keywords" content="html css">
+        <meta http-equiv="refresh" content="30">
+        <link rel="stylesheet" href="{% static 'css/Admin.css' %}">
+        <link rel="stylesheet" href="{% static 'css/Exam_schedule.css' %}">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        
+        <!--Start-->
+        <section class="Dashboard">
+           
+            <!--menu-->
+            <div class="admin-1">
+               <div class="admin12">
+                <img src="{% static 'images/mgr_logo-removebg.png' %}" width="35px" height="35px">
+                <h1>Dr. M.G.R University</h1>
+               </div>
+               <div class="admin11">
+                <span><ion-icon name="person-outline"></ion-icon></span>
+                <a href="/persona">Profile</a>
+               </div>
+               <div class="admin11 admin13 admin14">
+                <span><ion-icon name="create-outline"></ion-icon></span>
+                <a href="/exam">Exam Schedule</a>
+               </div>
+               <div class="admin11">
+                <span><ion-icon name="newspaper-outline"></ion-icon></span>
+                <a href="/result1">Result Portal</a>
+               </div>
+               <div class="admin11">
+                <span><ion-icon name="document-attach-outline"></ion-icon></span>
+                <a href="/downloading">Downloading answer sheets</a>
+               </div>
+               <div class="admin11 add">
+                <span><ion-icon name="log-out-outline"></ion-icon></span>
+                <a href="/dashboard">Logout</a>
+               </div>
+            </div>
+
+            <div class="admin-2">
+
+                <!--College name and logo-->
+                <section class="clg-logo">
+                    <img src="{% static 'images/mgr_logo-removebg.png' %}" style="height:83px; width:83px;">
+                    <div class="clg-name">
+                     <h1>Dr. M.G.R.</h1>
+                     <h1>EDUCATIONAL AND RESEARCH INSTITUTE</h1>
+                     <h1>DEEMED TO BE UNIVERSITY</h1>
+                     <p>University with Graded Autonomy Status</p>
+                     <p>(An ISO 21001 : 2018 Certified Institution)</p>
+                     <p>Periyar E.V.R High Road, Maduravoyal, Chennai-95. Tamilnadu, India</p>
+                    </div>
+                    <img src="{% static 'images/naac_a+.png' %}" >
+                </section>
+                
+                <section class="time-table">
+                    <div class="timetable-head">
+                      <h1>Timetable - Semester</h1>
+                      <p>Academic Year: 2022 - 2023, EVEN - (JAN 2023 - MAY 2023)</p>
+                    </div>
+
+                    <div class="timetable-boady">
+
+                        <div class="instructions">
+                            <h1>Instructions:</h1>
+                            <p>Examination timings 9:30 AM to 11:30 AM.</p>
+                            <p>Semester examination for 50 marks.</p>
+                            <p>Part-A (5 &times; 10 = 50 marks) 5 out of 10 questions.</p>
+                        </div>
+                        
+
+                        <div class="academic-details">
+                            <h1>B.tech / Computer Science & Engineering / &#8546;yr / &#8548; sem </h1>
+                            <table>
+                                <tr>
+                                    <th width="15%">Date</th>
+                                    <th width="15%">Day</th>
+                                    <th>Subject code</th>
+                                    <th>Subject name</th>
+                                </tr>
+                                <tr>
+                                    <td>1 / 4 / 23</td>
+                                    <td>Saturday</td>
+                                    <td>BC818009</td>
+                                    <td>Object Oriented Software Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td>3 / 4 / 23</td>
+                                    <td>Monday</td>
+                                    <td>BIT18003</td>
+                                    <td>Web Technology and Web Services</td>
+                                </tr>
+                                <tr>
+                                    <td>5 / 4 / 23</td>
+                                    <td>wednesday</td>
+                                    <td>BCS18ET3</td>
+                                    <td>PHP/MSQL</td>
+                                </tr>
+                                <tr>
+                                    <td>6 / 4 / 23</td>
+                                    <td>Thursday</td>
+                                    <td>BCS18E12</td>
+                                    <td>Cryptography and Network Security</td>
+                                </tr>
+                                <tr>
+                                    <td>10 / 4 / 23</td>
+                                    <td>Monday</td>
+                                    <td>OE</td>
+                                    <td>Open Elective</td>
+                                </tr>
+                            </table>
+                            <p><span>Note:</span> All the students are informed to attend the examination without fail.</p>
+                        </div>
+
+                    </div>
+                    <!--end-->
+                </section>
+                 
+            </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+
+.admin2{
+    padding:40px 50px;
+}
+
+.admin2 h1{
+    color:rgb(5, 5, 136);
+}
+
+.admin2 p{
+    margin-top: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    color:rgb(5, 5, 133);
+    margin-bottom: 50px;
+}
+
+.box_main{
+    display:grid;
+    grid-template-columns: 30% 25% 25% 25%;
+    gap:30px;
+    margin-bottom: 10px;
+}
+
+.box a{
+    text-decoration: none;
+    color:rgb(5, 5, 133);
+}
+
+.box embed{
+    margin-top: 5px;
+    border:2px solid rgb(15, 15, 15);
+}
+
+.box-1{
+    margin-left: -30px;
+}
+
+.box-2{
+    margin-left: -12px;
+}
+
+.box-3{
+    margin-left: 10px;
+}
+

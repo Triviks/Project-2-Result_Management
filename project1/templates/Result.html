@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="author" content="Trivikraman">
+        <meta name="description" content="Studen Result portal">
+        <meta name="keywords" content="html css">
+        <link rel="stylesheet" href="{% static 'css/Admin.css' %}">
+        <link rel="stylesheet" href="{% static 'css/Exam_schedule.css' %}">
+        <link rel="stylesheet" href="{% static 'css/Result.css' %}">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <!--start-->
+        <section class="Dashboard">
+           
+            <!--menu-->
+            <div class="admin-1">
+               <div class="admin12 ">
+                <img src="{% static 'images/mgr_logo-removebg.png' %}" width="35px" height="35px">
+                <h1>Dr. M.G.R University</h1>
+               </div>
+               <div class="admin11">
+                <span><ion-icon name="person-outline"></ion-icon></span>
+                <a href="/persona">Profile</a>
+               </div>
+               <div class="admin11 admin14">
+                <span><ion-icon name="create-outline"></ion-icon></span>
+                <a href="/exam">Exam Schedule</a>
+               </div>
+               <div class="admin11 admin13">
+                <span><ion-icon name="newspaper-outline"></ion-icon></span>
+                <a href="/result1">Result Portal</a>
+               </div>
+               <div class="admin11">
+                <span><ion-icon name="document-attach-outline"></ion-icon></span>
+                <a href="/downloading">Downloading answer sheets</a>
+               </div>
+               <div class="admin11 add">
+                <span><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
+                <a href="/dashboard">Logout</a>
+               </div>
+            </div>
+            <div class="admin-2">
+
+                <!--College name and logo-->
+                <section class="clg-logo">
+                    <img src="{% static 'images/mgr_logo-removebg.png' %}" style="height:83px; width:83px;">
+                    <div class="clg-name">
+                     <h1>Dr. M.G.R.</h1>
+                     <h1>EDUCATIONAL AND RESEARCH INSTITUTE</h1>
+                     <h1>DEEMED TO BE UNIVERSITY</h1>
+                     <p>University with Graded Autonomy Status</p>
+                     <p>(An ISO 21001 : 2018 Certified Institution)</p>
+                     <p>Periyar E.V.R High Road, Maduravoyal, Chennai-95. Tamilnadu, India</p>
+                    </div>
+                    <img src="{% static 'images/naac_a+.png' %}" >
+                </section>
+
+                <section class="Result">
+
+                   <div class="result-head">
+                    <h1>Result Portal</h1>
+                   </div>
+
+                   <div class="result-body">
+                    <p><span>Student Name : </span> {{dest1.name}}</p>
+                    <p><span>Student Register No : </span> {{dest1.register_no}}</p>
+                    <p><span>Degree & Branch : </span> {{dest1.branch}}</p>
+                   </div>
+
+                   <div class="result-table">
+                    <div class="academic-details">
+                        <table>
+                            <tr>
+                                <th>Semester</th>
+                                <th>Subject code</th>
+                                <th>Subject title</th>
+                                <th>marks</th>
+                                <th>Credits</th>
+                                <th>Grade</th>
+                            </tr>
+                            <tr>
+                                <td>&#8549</td>
+                                <td>BC818009</td>
+                                <td>Object Oriented Software Engineering</td>
+                                <td>{{dest1.oosm}}</td>
+                                <td>{{dest1.oosc}}</td>
+                                <td>{{dest1.oosg}}</td>
+                            </tr>
+                            <tr>
+                                <td>&#8549</td>
+                                <td>BIT18003</td>
+                                <td>Web Technology and Web Services</td>
+                                <td>{{dest1.webm}}</td>
+                                <td>{{dest1.webc}}</td>
+                                <td>{{dest1.webg}}</td>
+                            </tr>
+                            <tr>
+                                <td>&#8549</td>
+                                <td>BCS18ET3</td>
+                                <td>PHP/MSQL</td>
+                                <td>{{dest1.phpm}}</td>
+                                <td>{{dest1.phpc}}</td>
+                                <td>{{dest1.phpg}}</td>
+                            </tr>
+                            <tr>
+                                <td>&#8549</td>
+                                <td>BCS18E12</td>
+                                <td>Cryptography and Network Security</td>
+                                <td>{{dest1.crptom}}</td>
+                                <td>{{dest1.crptoc}}</td>
+                                <td>{{dest1.crptog}}</td>
+                            </tr>
+                            <tr>
+                                <td>&#8549</td>
+                                <td>OE</td>
+                                <td>Open Elective</td>
+                                <td>{{dest1.oem}}</td>
+                                <td>{{dest1.oec}}</td>
+                                <td>{{dest1.oeg}}</td>
+                            </tr>
+                        </table>
+                   </div>
+
+                   <div class="CGPA">
+                    <div class="cgpa-1">
+                        <p><span>Total Credits Earned : </span> {{dest1.credits_earned}}</p>
+                    </div>
+                    <div class="cgpa-2">
+                        <p><span>GPA : </span> {{dest1.GPA}}</p>
+                    </div>
+                    <div class="cgpa-3">
+                        <p><span>CGPA : </span> {{dest1.CGPA}}</p>
+                    </div>
+                   </div>
+                  </div>   
+
+                </section>
+            </div>    
+        </section>
+    </body>
+</html>                

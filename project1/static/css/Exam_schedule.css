@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+
+.clg-logo{
+    width:115%; 
+    display:block;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    margin-left: 13px;
+    gap:6px;
+    margin-top: -25px;
+}
+
+.clg-logo img{
+    width:70px;
+    height:70px;
+    margin-top:15px;
+    /* border:1px solid #ddd; */
+}
+
+.clg-name{
+    text-align: center;
+}
+
+section .clg-name h1:nth-child(1){
+    font-size: 30px;
+    color:rgb(185, 7, 7);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+section .clg-name h1:nth-child(2){
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color:rgb(7, 7, 102);
+}
+
+section .clg-name h1:nth-child(3){
+    color:rgb(214, 7, 7);
+}
+
+section .clg-name p:nth-child(4){
+    background-color: rgb(7, 7, 102);
+    display:inline;
+    font-weight: 500;
+    font-size: 10px;
+    color:white;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+section .clg-name p:nth-child(5), section .clg-name p:nth-child(6){
+    font-size: 9px;
+    margin-top: 3px;
+}
+
+.time-table{
+    display:block;
+    margin:auto;
+    margin-left: 50px;
+}
+
+.academic-details table{
+    width:111%;
+}
+
+table,th,tr,td{
+    border:1px solid rgb(168, 165, 165);
+    border-collapse: collapse;
+}
+
+.timetable-head{
+    text-align: center;
+    display:block;
+    margin-left:160px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.time-table h1{
+    color:rgb(7,7,102);
+}
+
+.timetable-head h1{
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+.timetable-head p{
+    font-size: 15px;
+}
+
+.instructions{
+    margin-bottom: 40px;
+}
+
+.instructions h1{
+    margin-bottom: 5px;
+}
+
+.academic-details th{
+    padding:7px 5px 9px;
+}
+
+.academic-details h1{
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.academic-details p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.academic-details table{
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.academic-details p{
+    font-size: 14px;
+}
+
+.academic-details span{
+    font-weight: bold;
+}

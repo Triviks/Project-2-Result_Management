@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Answer sheets</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="author" content="Trivikraman">
+        <meta name="description" content="Answer sheet page">
+        <meta name="keywords" content="html css">
+        <link rel="stylesheet" href="{% static 'css/Admin.css' %}">
+        <link rel="stylesheet" href="{% static 'css/Exam_schedule.css' %}">
+        <link rel="stylesheet" href="{% static 'css/answer_sheets.css' %}">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        {% block content %}
+        <!--start-->
+        <section class="Dashboard">
+           
+            <!--menu-->
+            <div class="admin-1">
+                <div class="admin12">
+                 <img src="{% static 'images/mgr_logo-removebg.png' %}" width="35px" height="35px">
+                 <h1>Dr. M.G.R University</h1>
+                </div>
+                <div class="admin11 ">
+                 <span><ion-icon name="person-outline"></ion-icon></span>
+                 <a href="/persona">Profile</a>
+                </div>
+                <div class="admin11 admin14">
+                 <span><ion-icon name="create-outline"></ion-icon></span>
+                 <a href="/exam">Exam Schedule</a>
+                </div>
+                <div class="admin11">
+                 <span><ion-icon name="newspaper-outline"></ion-icon></span>
+                 <a href="/result1">Result Portal</a>
+                </div>
+                <div class="admin11 admin13">
+                 <span><ion-icon name="document-attach-outline"></ion-icon></span>
+                 <a href="/downloading">Downloading answer sheets</a>
+                </div>
+                <div class="admin11 add">
+                 <span><ion-icon name="log-out-outline"></ion-icon></span>
+                 <a href="/dashboard">Logout</a>
+                </div>
+             </div>
+            
+            <div class="admin2">
+
+            <h1>Your Answer Scripts</h1>
+            <p>Click on the subject you want to download your answer script for</p>
+
+         <div class="box_main">
+
+            <div class="box">
+                    <a href="{% static 'images/201061101212 CAT-1 (1).pdf' %}" download>Object-Oriented Software Engineering</a>
+                    <embed src="{% static 'images/201061101212 CAT-1 (1).pdf' %}" type="application/pdf" height="250px" width="250px">
+                    <!-- <iframe src="Ajio_FN6386307272_1677851119848.pdf#toolbar=0" frameborder="0" height="500px" width="100%"></iframe> -->
+            </div>
+            <div class="box box-1">
+                
+                    <a href="{% static 'images/201061101212 CAT-1 (1).pdf' %}" download>Elective-II</a>
+                    <embed src="{% static 'images/201061101212 CAT-1 (1).pdf' %}" type="application/pdf"  height="250px" width="250px">
+                
+            </div>
+            <div class="box box-2">
+                <a href="{% static 'images/201061101212 CAT-1 (1).pdf' %}" download="">Web Services & Web Technology</a>
+                <embed src="{% static 'images/201061101212 CAT-1 (1).pdf' %}" type="application/pdf" height="250px" width="250px">
+                <!-- <iframe src="Ajio_FN6386307272_1677851119848.pdf#toolbar=0" frameborder="0" height="500px" width="100%"></iframe> -->
+            </div>
+            <div class="box box-3">
+                <a href="{% static 'images/201061101212 CAT-1 (1).pdf' %}" download>Open Elective-II</a>
+                <embed src="{% static 'images/201061101212 CAT-1 (1).pdf' %}" type="application/pdf"  height="250px" width="250px">
+            </div>
+
+        </div>
+
+        <div class="box_main box_main1">
+            
+            <div class="box">
+                <a href="{% static 'images/201061101212 CAT-1 (1).pdf' %}" download>PHP/MySQL</a>
+                <embed src="{% static 'images/201061101212 CAT-1 (1).pdf' %}" type="application/pdf"  height="200px" width="300">
+             </div>
+        </div>
+        
+        </section>
+        {% endblock %}
+    </body>
+</html>            

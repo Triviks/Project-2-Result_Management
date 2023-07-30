@@ -1,0 +1,47 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+
+.result-head{
+    text-align: center;
+    display:block;
+    margin: auto;
+    margin-left: 190px;
+    color:rgb(7,7,102);
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.Result{
+    margin-left: 34px;
+}
+
+.result-body{
+    margin-bottom: 35px;
+}
+
+.result-body span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.result-body p{
+    margin-bottom: 5px;
+}
+
+.CGPA{
+    display:grid;
+    grid-template-columns: 50% 40% 30%;
+    margin-top: 30px;
+}
+
+.CGPA span{
+    font-size: 14px ;
+    font-weight: bold;
+}
+

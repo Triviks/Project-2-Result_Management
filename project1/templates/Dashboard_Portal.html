@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dr. M.G.R Educational and Research Institute</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="author" content="Trivikraman">
+        <meta name="Description" content="Dashboard">
+        <meta name="keywords" content="html css">
+        <link rel="stylesheet" href="{% static 'css/Dashboard_Portal.css' %}">
+    </head>
+    <body>
+      {% block content %}
+        <!--start-->
+        <!--college name and logo-->
+        <section class="clg-logo">
+           <img src="{% static 'images/mgr_logo-removebg.png' %}" style="height:120px; width:120px;">
+           <div class="clg-name">
+            <h1>Dr. M.G.R.</h1>
+            <h1>EDUCATIONAL AND RESEARCH INSTITUTE</h1>
+            <h1>DEEMED TO BE UNIVERSITY</h1>
+            <p>University with Graded Autonomy Status</p>
+            <p>(An ISO 21001 : 2018 Certified Institution)</p>
+            <p>Periyar E.V.R High Road, Maduravoyal, Chennai-95. Tamilnadu, India</p>
+           </div>
+           <img src="{% static 'images/naac_a+.png' %}" >
+        </section>
+        
+        <!--form used to gather user input-->
+        <section class="form">
+
+          <h1>Student Dashboard Portal</h1>
+
+          <form action="Admin" method="POST">
+            {% csrf_token %}
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+            <label for="email"> E-Mail ID: </label>
+            <input id="email" name="email" type="email" placeholder="Enter your E-Mail ID" required><br> 
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required> 
+            <br>
+            <div class="button">
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+            </div>
+            <div class="form1">
+              {% for message in messages %}
+                <p>{{message}}</p>
+              {% endfor %}
+             </div>
+          </form>
+             
+        </section>
+        <!--end-->
+        {% endblock %}
+    </body>
+</html>
